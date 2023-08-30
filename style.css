@@ -45,13 +45,18 @@ html {
 
 .header-active {
   background-color: #020001e6;
-  z-index: 1;
   padding: 1.8rem 3.6rem;
 }
 
 .primary-header .owner-name {
   font-size: 1.8rem;
+  color: #f4f4f4;
 }
+
+.primary-header .owner-name-active {
+  color: #ffffff;
+}
+
 
 .primary-header {
   z-index: 1;
@@ -67,13 +72,14 @@ html {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-
+ 
   z-index: 9;
   text-transform: uppercase;
   background-color: #353535;
   padding: 0.8rem 1.2rem;
   border-radius: 50px;
   /* box-shadow: 0 0 6px 0.1px #ffffff; */
+  /* transition: all 3s ease-in-out; */
 }
 
 .online-tag > p {
@@ -81,14 +87,14 @@ html {
   letter-spacing: 0.8px;
 }
 
-span.dot::after {
+span.dot {
   display: inline-block;
-  content: '';
-  background-color: rgb(0, 255, 0);
-  width: 1rem;
-  height: 1rem;
+  /* content: ''; */
+  background-color: #e80c0c;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
-  box-shadow: 0 0 10px 3px green;
+  box-shadow: 0 0 10px 3px #e80c0c;
   border: 0.1px black solid;
 }
 
@@ -131,7 +137,7 @@ span.dot::after {
   0% {
     width: 0%;
   }
-  50%{
+  50% {
     width: 80%;
   }
   100% {
