@@ -172,12 +172,13 @@ span.dot {
   border-radius: 30px;
   font-size: 1.4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 0.3s;
+  transition: all 0.18s;
 }
 .resume-download-btn:visited,
 .resume-download-btn:hover {
   background-color: #cbcb00;
-  transform: translate(-1px, -1px);
+  /* transform: translate(-1px, -1px); */
+  scale: 0.98;
 }
 
 .dwnld-btn-content {
@@ -277,127 +278,6 @@ svg {
 /* ///////////////////////////////////////
 ////////// EDUCATION SECTION ////////////
 ////////////////////////////////////// */
-
-.education-section {
-  background-color: #dbeeff55;
-  padding: 2.4rem 4.8rem;
-  position: relative;
-}
-
-.education-container {
-  /* background-color: red; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 84px;
-
-  position: relative;
-}
-
-.education-container::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  /* width: 12px; */
-  height: 90%;
-  background-color: transparent;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-
-  border-left: 2px dashed #535318;
-  opacity: 0.4;
-}
-
-.education-item:nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.education-item:nth-child(3) {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.education-container > .education-item {
-  width: 100%;
-  /* background-color: yellow; */
-  padding: 1.6rem;
-
-  /* position: relative; */
-}
-
-.education-container > div::after {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #585811;
-  border-radius: 50%;
-  left: 50%;
-  opacity: 0.8;
-}
-
-.education-container > div:nth-child(1)::after {
-  top: 5%;
-  transform: translate(-50%, -50%);
-}
-
-.education-container > div:nth-child(2)::after {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.education-container > div:nth-child(3)::after {
-  top: 95%;
-  transform: translate(-50%, -50%);
-}
-
-.qualification {
-  /* background-color: white; */
-  margin-bottom: 0.8rem;
-  font-size: 1.6rem;
-}
-
-.institute {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.year-of-completion {
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-
-.discription {
-  font-size: 1.3rem;
-}
-
-/*////////////////////////////////////
-///////////////Truck icon////////////
-///////////////////////////////////*/
-
-.truck-icon > svg {
-  position: absolute;
-  left: 52%;
-  top: 15%;
-  transform: translate(-50%,-50%)rotate(90deg);
-  width: 4.2rem;
-  height: 4.2rem;
-  /* color: blue; */
-  fill: #060e57;
-  /* stroke: #fff 1px; */
-z-index: 1;
-opacity: 0.8;
-}
-
-
-
-
-
-
 
 
 .hide {
