@@ -17,7 +17,7 @@ body {
 ////////// HEADER CONTAINER //////////////////
 ////////////////////////////////////// */
 
-.header-container {
+.header-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,11 +139,12 @@ span.dot {
 
 .hero-container {
   max-width: 120rem;
+  padding: 0 3.6rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6.4rem;
+  gap: 4.8rem;
 }
 
 .hero-text-box{
