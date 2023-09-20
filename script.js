@@ -11,14 +11,10 @@ const onlineTagStatus = document.querySelector('.dot');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
     header.classList.add('header-active');
-    ownerName.classList.add('owner-name-active');
     onlineTagStatus.style.backgroundColor = '#78e009';
-    onlineTagStatus.style.boxShadow = '0 0 10px 3px #85e80cda';
   } else {
     header.classList.remove('header-active');
-    ownerName.classList.remove('owner-name-active');
     onlineTagStatus.style.backgroundColor = '#e80c0c';
-    onlineTagStatus.style.boxShadow = '0 0 10px 3px #e80c0c';
   }
 });
 
@@ -30,10 +26,9 @@ window.addEventListener('scroll', () => {
     truckIcon.style.position = 'fixed';
     truckIcon.style.top = '17.5%';
     truckIcon.style.left = '51.8%';
-  }else {
+  } else {
     truckIcon.style.position = 'absolute';
     truckIcon.style.top = '15%';
     truckIcon.style.left = '52%';
-    
   }
 });

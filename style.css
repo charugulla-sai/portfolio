@@ -9,18 +9,15 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  color: #333;
+}
+
 /* ///////////////////////////////////////
 ////////// HEADER CONTAINER //////////////////
 ////////////////////////////////////// */
 
 .header-container {
-  /* background: linear-gradient(
-    90deg,
-    #020001 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgb(0, 140, 255) 100%
-  ); */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,12 +33,14 @@ html {
   min-width: 100%;
   padding: 2.4rem 4.8rem;
   transition: all 0.5s ease-in-out;
+  margin-bottom: 6.4rem;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.owner-container{
+.owner-container {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -49,11 +48,25 @@ html {
 }
 
 .owner-img {
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 6.2rem;
+  height: 6.2rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px black solid;
+  border: 2px #3b3b3b solid;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .owner-img img {
@@ -63,56 +76,33 @@ html {
 
 span.dot {
   display: inline-block;
-  content: "";
+  content: '';
   background-color: #e80c0c;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border-radius: 50%;
-  box-shadow: 0 0 10px 3px #e80c0c;
-  border: 0.1px black solid;
+  border: 2.2px #fff solid;
 
   position: absolute;
-  top: 68%;
-  left: 40%;
+  top: 79%;
+  left: 30%;
 }
 
 .header-active {
-  background-color: #d74f0be6;
+  background-color: #fdcfbb;
   padding: 1.8rem 3.6rem;
+  color: #333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .primary-header .owner-name {
-  font-size: 1.8rem;
-  /* color: #f4f4f4; */
-}
-
-.primary-header .owner-name-active {
-  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .primary-header {
   z-index: 1;
-}
-
-/* .owner-container {
-  
-} */
-
-.online-tag {
-  /* display: flex;
-  align-items: center;
-  gap: 0.4rem;
-
-  z-index: 9;
-  text-transform: uppercase;
-  background-color: #d74f0ba7;
-  padding: 0.8rem 1.2rem;
-  border-radius: 50px; */
-}
-
-.online-tag > p {
-  /* font-size: 0.9rem;
-  letter-spacing: 0.8px; */
 }
 
 /* ///////////////////////////////////////
@@ -129,30 +119,12 @@ span.dot {
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
-}
-
-.navbar .nav-list > .nav-item::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-  height: 3px;
+  font-weight: 600;
+  font-size: 1.6rem;
   transition: all 0.2s ease-in-out;
-  border-radius: 2px;
+  cursor: pointer;
 }
 
-.navbar .nav-list > .nav-item:hover::after {
-  background-color: #f1f100;
-  animation: br-animate 0.3s forwards 1;
-}
-
-@keyframes br-animate {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 80%;
-  }
-  100% {
-    width: 100%;
-  }
+.nav-item:hover {
+  color: #cb4c29;
 }
