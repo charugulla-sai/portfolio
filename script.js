@@ -1,12 +1,8 @@
 'use strict';
 
 const header = document.querySelector('.primary-header');
-const ownerName = document.querySelector('.owner-name');
-// const onlineTagContent = document.querySelector('.online-tag p');
-const onlineTagStatus = document.querySelector('.dot');
 
-// const educationSection = document.querySelector('.education-section');
-// const truckIcon = document.querySelector('.truck-icon > svg');
+const onlineTagStatus = document.querySelector('.dot');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
