@@ -31,7 +31,8 @@ body {
 .primary-header {
   position: fixed;
   min-width: 100%;
-  padding: 2.4rem 4.8rem;
+  background-color: #fff;
+  padding: 2.1rem 4.2rem;
   transition: all 0.4s ease-in-out;
   /* margin-bottom: 6.4rem; */
 
@@ -89,10 +90,9 @@ span.dot {
 }
 
 .header-active {
-  /* background-color: #ffe2d5; */
-  padding: 1.8rem 3.6rem;
+  padding: 1rem 3.6rem;
   color: #424242;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
 }
 
 .primary-header .owner-name {
@@ -134,7 +134,8 @@ span.dot {
 
 .hero-section {
   margin-top: 10rem;
-  padding: 4.8rem 4.2rem 0 4.2rem;
+  /* padding: 4.8rem 4.2rem; */
+  margin-bottom: 6.4rem;
 }
 
 .hero-container {
@@ -147,8 +148,8 @@ span.dot {
   gap: 4.8rem;
 }
 
-.hero-text-box{
-  padding:0  3.6rem;
+.hero-text-box {
+  padding: 0 3.6rem;
 }
 
 .hero-video-box video {
@@ -163,4 +164,69 @@ span.dot {
 
 .role-short-desc {
   font-size: 1.8rem;
+}
+
+/* ///////////////////////////////////////
+////////// About section //////////////////
+////////////////////////////////////// */
+
+.about-section {
+  padding: 3.2rem;
+  background-color: #fff7f4;
+  /* position: relative; */
+}
+
+.about-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 16rem;
+  padding: 4.8rem 9.6rem;
+}
+
+.about-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img-box img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  /* height: 100%; */
+
+  transform:scale(1.3);
+  border-radius: 5px;
+  /* background-size: cover; */
+}
+
+.about-text-box {
+  /* padding: 4.8rem 6.4rem; */
+}
+
+.about-me-tag {
+  /* position: absolute; */
+  /* top: -3%; */
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #cb4c29;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.about-me-heading {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  margin-bottom: 3.2rem;
+}
+
+.about-me-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  word-spacing: 1.5px;
 }
