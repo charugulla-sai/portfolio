@@ -5,6 +5,6 @@
 }
 
 .about_me_heading:hover{
-  color: #fff;
-  -webkit-text-stroke: 1px #00000000;
+  color: #2eff04;
+  /* -webkit-text-stroke: 1px #00000000; */
 }
