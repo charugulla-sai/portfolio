@@ -1,0 +1,35 @@
+.project_img {
+  transition: transform 8s ease-in-out;
+}
+
+.project_img:hover {
+  transform: translateY(-85%);
+}
+
+.project_img_box {
+  border-top-left-radius: 16px;
+  border: 1px rgb(209, 209, 209) solid;
+}
+
+.project_card {
+  box-shadow: #0400ff69 0px 2px 8px;
+  transition: all 0.1s ease-in-out;
+}
+
+.project_card:hover {
+  box-shadow: #0400ff69 0px 5px 16px;
+}
+
+
+.project_links a{
+  /* opacity: 0.95; */
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  
+}
+
+.project_links a:hover{
+  /* opacity: 1; */
+  /* background-color: rgb(190, 190, 190); */
+  transform: rotate(-2deg);
+}
