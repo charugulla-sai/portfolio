@@ -1,9 +1,9 @@
 .project_img {
-  transition: transform 8s ease-in-out;
+  transition: transform 5s ease;
 }
 
 .project_img:hover {
-  transform: translateY(-85%);
+  transform: translateY(-65%);
 }
 
 .project_img_box {
