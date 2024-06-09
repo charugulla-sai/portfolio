@@ -3,6 +3,8 @@ import About from './components/About/About';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import ProjectContainer from './components/Projects/ProjectContainer';
+import Contact from './components/Contact/Contact';
+import styles from './App.module.css';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 200, y: 100 });
@@ -13,8 +15,8 @@ function App() {
 
   return (
     <div onMouseMove={trackMouse} className="relative ">
-      <span
-        className="mouse_circle"
+      <div
+        className={styles.mouse_circle}
         style={{
           width: '38px',
           height: '38px',
@@ -25,11 +27,12 @@ function App() {
           top: `${mousePosition.y}px`, // Adjusted for scroll position
           transform: 'translate(-50%, -50%)',
         }}
-      ></span>
+      ></div>
       <Header />
       <Hero />
       <About />
       <ProjectContainer />
+      <Contact />
     </div>
   );
 }

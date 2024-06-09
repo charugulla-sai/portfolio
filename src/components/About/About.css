@@ -3,3 +3,8 @@
   -webkit-text-stroke: 1px #2eff04;
   transition: all 0.2s ease-in-out;
 }
+
+.about_me_heading:hover{
+  color: #fff;
+  -webkit-text-stroke: 0px #000000;
+}

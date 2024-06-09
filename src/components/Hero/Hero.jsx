@@ -63,7 +63,7 @@ export default function Hero() {
               <p>Hyderabad, India</p>
             </a>
           </div>
-          <div className="hero_image_box max-w-80 max-h-80 rounded-[50%] overflow-hidden border-solid border-black border-4 z-50">
+          <div className="hero_image_box max-w-80 max-h-80 rounded-[50%] overflow-hidden border-solid border-black border-4">
             <img className="w-full  " src={myimage} />
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="icons">
             <ul className="flex gap-4">
               {techStack.map((technology) => (
-                <li className="w-8 hover:-translate-y-2 z-[200] transition-all duration-300">
+                <li className="w-8 hover:-translate-y-2  transition-all duration-300">
                   <img className="w-full" src={technology} />
                 </li>
               ))}

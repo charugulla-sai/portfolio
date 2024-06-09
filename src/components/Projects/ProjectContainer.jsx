@@ -39,7 +39,7 @@ export default function ProjectContainer() {
     <section className="w-full">
       <div className="max-w-[1100px] mx-auto p-5 ">
         <div className="mb-9">
-          <h3 className="text-3xl font-semibold uppercase text-[#4446b7] border-b-2 border-b-red-200 mx-auto w-fit mb-7">
+          <h3 className="text-3xl font-semibold uppercase text-[#4446b7] border-b-2 border-b-red-200  w-fit mb-7">
             Projects
           </h3>
           <h4 className="text-2xl font-bold">
