@@ -13,7 +13,7 @@ import tailwindcss from '../../img/tailwindcss.png';
 const projects = [
   {
     projectImg: daruwalaImg,
-    projectTitle: 'Project 2',
+    projectTitle: 'Daruwala',
     projectDesc: `Introducing Daruwala, a sophisticated alcohol-centric website meticulously crafted with the MERN stack. Featuring seamless user experiences like sign-in, sign-up, cart management, orders, and secure payments via Razorpay, Daruwala redefines the way enthusiasts explore and purchase their favorite spirits. Leveraging MongoDB Atlas for robust data management, this platform seamlessly integrates modern design with cutting-edge functionality, offering a one-stop destination for aficionados to indulge in the world of fine libations.`,
     techUsed: [reactjs, nodejs, expressjs, mongodb, css],
     githubLink: 'https://github.com/charugulla-sai/daruwala.git',
