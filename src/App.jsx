@@ -14,12 +14,12 @@ function App() {
   return (
     <div onMouseMove={trackMouse} className="relative ">
       <span
-        className="mouse_circle z-0 "
+        className="mouse_circle"
         style={{
           width: '38px',
           height: '38px',
           borderRadius: '50%',
-          border: '1px solid green',
+          border: '2px solid pink',
           position: 'fixed ',
           left: `${mousePosition.x}px`,
           top: `${mousePosition.y}px`, // Adjusted for scroll position

@@ -36,13 +36,15 @@ const projects = [
 
 export default function ProjectContainer() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full">
       <div className="max-w-[1100px] mx-auto p-5 ">
         <div className="mb-9">
-          <h3 className="text-xl font-semibold uppercase text-[#4446b7] border-b-2 border-b-red-200 mx-auto w-fit mb-7">
+          <h3 className="text-3xl font-semibold uppercase text-[#4446b7] border-b-2 border-b-red-200 mx-auto w-fit mb-7">
             Projects
           </h3>
-          <h4 className='text-2xl font-bold'>Each project is a unique peice of development.🧩</h4>
+          <h4 className="text-2xl font-bold">
+            Each project is a unique peice of development.🧩
+          </h4>
         </div>
         <div className="flex flex-col gap-9">
           {projects.map((project) => (
