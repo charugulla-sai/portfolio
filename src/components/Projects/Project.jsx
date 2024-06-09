@@ -8,7 +8,7 @@ export default function Project({
   liveDemoLink,
 }) {
   return (
-    <div className="project_card flex w-full gap-9 p-5 rounded-tl-[16px] items-center justify-between hover:scale-[1.01] ">
+    <div className="project_card flex w-full gap-9 p-5 rounded-tl-[16px] items-center justify-between z-50">
       <div className="project_img_box min-w-[48%] max-h-[320px] overflow-hidden">
         <img
           className="project_img w-full "

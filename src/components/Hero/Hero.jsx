@@ -45,9 +45,9 @@ export default function Hero() {
               <p>Hyderabad, India</p>
             </a>
           </div>
-          <div className="hero_image_box max-w-80 rounded-[50%] overflow-hidden border-solid border-black border-4 ">
+          <div className="hero_image_box max-w-80 max-h-80 rounded-[50%] overflow-hidden border-solid border-black border-4 z-50">
             <img
-              className="w-full "
+              className="w-full  "
               onMouseEnter={() => {
                 setProfileImg(myimage);
               }}
